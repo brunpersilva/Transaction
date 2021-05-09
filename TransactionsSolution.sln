@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionsDomain", "Trans
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionInfra", "TransactionRepository\TransactionInfra.csproj", "{5C3FC833-19A7-4E25-AFE5-7F0E47F1C57B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionAPI", "TransactionAPI\TransactionAPI.csproj", "{5E728CE8-0A1F-42DD-808C-428D4CAA21AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5C3FC833-19A7-4E25-AFE5-7F0E47F1C57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C3FC833-19A7-4E25-AFE5-7F0E47F1C57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C3FC833-19A7-4E25-AFE5-7F0E47F1C57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E728CE8-0A1F-42DD-808C-428D4CAA21AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E728CE8-0A1F-42DD-808C-428D4CAA21AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E728CE8-0A1F-42DD-808C-428D4CAA21AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E728CE8-0A1F-42DD-808C-428D4CAA21AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
