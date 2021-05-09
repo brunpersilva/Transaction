@@ -6,7 +6,7 @@ namespace TransactionsDomain.Models.Enuns
 {
     public enum OrderType
     {
-        Purshace = 1,
+        Purchase = 1,
         Sellout = 2
     }
 }
