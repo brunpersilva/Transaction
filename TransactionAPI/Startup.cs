@@ -10,6 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TransactionAPI.Models;
+using TransactionInfra;
+using TransactionRepository;
+using TransactionsDomain.Models.Interfaces;
 
 namespace TransactionAPI
 {
@@ -19,13 +23,21 @@ namespace TransactionAPI
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSingleton<IApplicationConfiguration>(new ApplicationConfiguration
+            { ConnectionString = Configuration.GetConnectionString("DefaltConnection") });
+
+
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
